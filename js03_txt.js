@@ -10,3 +10,5 @@
      Filename: js03.js
  */
 
+//Day of the week
+let weekDays = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
