@@ -17,7 +17,7 @@ window.addEventListener("load",addWeekDays);
 function addWeekDays() {
     let i=0; //initial counter value
     //reference the collection of heading cells
-    let headngCells = document.getElementsByTagName("th");
+    let headingCells = document.getElementsByTagName("th");
     //write each of the seven days into a heading cell
     while (i < 7) {
         headingCells[i].innerHTML = weekDays[i];
