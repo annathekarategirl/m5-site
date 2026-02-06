@@ -14,7 +14,7 @@
 let weekDays = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 window.addEventListener("load",addWeekdays);
 //Func to write weekday names into calender
-function addWeekdays() {
+function addWeekDays() {
     let i=0; //initial counter value
     //reference the collection of heading cells
     let headngCells = document.getElementsByTagName("th");
