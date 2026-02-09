@@ -42,6 +42,14 @@ function showGames(){
         gameInfo += gameOpponents[i]+"<br>";
         //Include the result and score
         gameInfo += gameResults[i] + ": (" + runsScored[i] + " - "+ runsAllowed[i]+ ")";
+        //Display inning played fpr suspended, shortened, or extra-inning games
+        if (gameInnings[i]<5){
+            gameInfo += " [" + gameInnings[i]+"]***";
+        } else if (gameInnings[i] <9) {
+            gameInfo += " [" + gameInnings[i]+"]*";
+        } else if (gameInnings[i] > 9) {
+            gameInfo += " [" + gameInnings[i] + "]";
+        }
         //close paragraph
         gameInfo+= "</p>";
         //Write the info into a table cell
