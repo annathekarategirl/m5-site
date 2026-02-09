@@ -28,7 +28,7 @@ function addWeekDays() {
 window.addEventListener("load", showGames);
 //Function to write game info into the calender
 function showGames(){
-    for (let i=0; < gameDates.length; i++){
+    for (let i=0; i < gameDates.length; i++) {
         let gameInfo = "";
         //open paragraph
         gameInfo +="<p>"
