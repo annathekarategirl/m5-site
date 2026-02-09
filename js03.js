@@ -31,7 +31,20 @@ function showGames(){
     for (let i=0; i < gameDates.length; i++) {
         let gameInfo = "";
         //open paragraph
-        gameInfo +="<p>"
+        switch (gameResults[i]) {
+            case "W":
+                gameInfo += "<p class='win'>";
+                break;
+            case "L":
+                gameInfo += "<p class='lose'>";
+                break;
+            case "S":
+                gameInfo+= "<p class='suspended'>";
+                break;
+            case "P":
+                gameInfo += "<p class='postponed'>"
+                break;
+        }
         //Display game location
         if (gameLocations[i]=== "h") {
             gameInfo += "vs. ";
