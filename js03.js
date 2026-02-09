@@ -32,6 +32,12 @@ function showGames(){
         let gameInfo = "";
         //open paragraph
         gameInfo +="<p>"
+        //Display game location
+        if (gameLocations[i]=== "h") {
+            gameInfo += "vs. ";
+        } else if (gameLocations[i]==="a"){
+            gameInfo=+"@ ";
+        }
         //Include opponent
         gameInfo += gameOpponents[i]+"<br>";
         //Include the result and score
